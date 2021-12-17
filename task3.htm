@@ -1,0 +1,30 @@
+<html>
+    <head><script type="text/javascript">
+      function  validid(){
+          if(document.username!=null && document.password!=null){
+            alert("Registration Successful!");
+          }
+          else{
+              alert("Enter username and password!");
+          }
+      } 
+      function forgotpassword(){
+            alert("You can change  your password!");
+      }
+    </script>
+    </head>
+    <body bgcolor="grey">
+    <table border="0" align="center" style="width: 100px; height: 100px; margin-top: 100px; background-color: black;">
+     <tr>
+        <td>
+    <img src="IMG_20211217_141927_328.JPG" style="margin-top: 100px; margin-left: 100px; margin-right: 100px; margin-bottom: 40px;" height="150" width="350">
+     <input type="email" name="username" placeholder="Username" style="margin-left: 100px; margin-right: 100px; width:350px; margin-bottom: 20px; border-radius: 5px;height: 30px;">
+     <input type="password" name="password" placeholder="Password" style="margin-left: 100px; margin-right: 100px; width:350px; margin-bottom: 20px; border-radius: 5px; height: 30px;"
+      pattern="(?=.*@)(?=.*[A-Z])(?=.*[0-9])">
+     <input type="submit" onclick="validid()"    value="Login" style="margin-left: 100px; margin-right: 100px; width:350px; margin-bottom: 20px; color: white; background-color: green; border-radius: 5px;height: 30px; border: 0px;">
+     <input type="button" value="Forgot your password?" onclick="forgotpassword();" style="margin-left: 100px; margin-right: 100px; width:350px; margin-bottom: 20px; color: white; background-color: black;border: 0px;height: 30px; text-decoration: underline;">
+     </td>
+     </tr>
+    </table>
+    </body>
+</html>
